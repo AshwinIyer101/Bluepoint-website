@@ -1,7 +1,5 @@
 import Link from 'next/link'
 import MaxWidthWrapper from './MaxWidthWrapper'
-
-import Navitems from './Navitems'
 import Logo from './Logo'
 import { buttonVariants } from './ui/button'
 
@@ -63,7 +61,7 @@ const Navbar = () => {
                                                 variant: 'default',
                                             })}
                                         >
-                                            Contact us
+                                            Get in touch
                                         </Link>
                                     </div>
                                 </div>

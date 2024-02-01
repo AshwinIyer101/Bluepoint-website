@@ -2,7 +2,7 @@ import Link from 'next/link'
 import MaxWidthWrapper from './MaxWidthWrapper'
 import Logo from './Logo'
 import { buttonVariants } from './ui/button'
-import { Sheet, SheetContent, SheetTitle, SheetTrigger } from './ui/sheet'
+import { Sheet, SheetContent, SheetFooter, SheetTitle, SheetTrigger } from './ui/sheet'
 import { Menu } from 'lucide-react'
 
 
@@ -25,15 +25,16 @@ const Navbar = () => {
                             <div className="ml-auto flex  items-center">
                                 <div className=' lg:hidden'>
                                     <Sheet>
-                                      <SheetTrigger>
+                                      <SheetTrigger className='mr-4'>
                                         <Menu />
                                       </SheetTrigger>  
-                                      <SheetContent>
+                                      <SheetContent className='flex flex-col h-full'>
                                         <SheetTitle>
                                             Navigation
                                         </SheetTitle>
+                                        <div className='flex flex-col '>
                                         <div className='flex flex-col items-center'>
-                                        <div className="ml-4 flow-root py-5 lg:ml-6 text-primary">
+                                        <div className="ml-4 flow-root py-4 lg:ml-6 text-primary">
                                     <Link
                                             href="/dot"
                                             className={buttonVariants({
@@ -43,7 +44,7 @@ const Navbar = () => {
                                             Dot
                                         </Link>
                                     </div>                                
-                                    <div className="ml-4 flow-root py-5 lg:ml-6">
+                                    <div className="ml-4 flow-root py-4 lg:ml-6">
                                         <Link
                                                 href="/about-us"
                                                 className={buttonVariants({
@@ -53,7 +54,7 @@ const Navbar = () => {
                                                 About us
                                             </Link>
                                         </div>
-                                        <div className="ml-4 flow-root py-5 lg:ml-6">
+                                        <div className="ml-4 flow-root py-4 lg:ml-6">
                                         <Link
                                                 href="/services"
                                                 className={buttonVariants({
@@ -63,7 +64,7 @@ const Navbar = () => {
                                                 Services
                                             </Link>
                                         </div>
-                                        <div className="ml-4 flow-root py-5 lg:ml-6">
+                                        <div className="ml-4 flow-root py-4 lg:ml-6">
                                         <Link
                                                 href="/contact-us"
                                                 className={buttonVariants({
@@ -73,8 +74,18 @@ const Navbar = () => {
                                                 Get in touch
                                             </Link>
                                         </div>
-                                            </div>
+                                        </div>
+                                        </div>                                       
+                                        
+                                        <div className="flex justify-center object-bottom mt-auto -mb-20 ">
+                                            
+                                         <Logo />
+                                            
+                                        </div>
+                                        
                                         </SheetContent>
+                                        
+                                        
                                         </Sheet>
                                     </div>
                                 <div className="hidden lg:flex-1 lg:flex lg:items-center lg:justify-end lg:space-x-6 ">  

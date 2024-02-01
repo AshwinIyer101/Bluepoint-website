@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils';
 import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
 
 
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         <div className=' flex-grow flex-1'>
         {children}
         </div>
+        <Footer />
         </main>
         
       </body>

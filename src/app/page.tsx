@@ -6,6 +6,8 @@ import { ArrowDownToLine, CircleDollarSign, LibrarySquare, LineChart } from "luc
 import HomeBlurb from "@/components/Solutions_blurb"; 
 import ProductsBlurb from "@/components/Products_blurb";
 import Action_call from "@/components/Call_to_action";
+import ProductsMobileBlurb from "@/components/Products_mobile_blurb";
+import SolutionsMobileBlurb from "@/components/Solutions_mobile_blurb";
 
 const perks = [
   {
@@ -81,7 +83,8 @@ export default function Home() {
       </div>
     </MaxWidthWrapper>
     </section>
-    <section>
+    <section className="hidden md:flex md:flex-col">
+    
     <MaxWidthWrapper className="py-20">
     <HomeBlurb /> 
     </MaxWidthWrapper>
@@ -89,6 +92,19 @@ export default function Home() {
     <MaxWidthWrapper className="py-20">
     <ProductsBlurb /> 
     </MaxWidthWrapper>
+ 
+    </section>
+
+    <section className='sm:flex sm:flex-col md:hidden'>
+      <MaxWidthWrapper className="pt-15 ">
+        <SolutionsMobileBlurb />
+      </MaxWidthWrapper>
+
+      <MaxWidthWrapper className="pb-20 pt-5">
+        <ProductsMobileBlurb />
+      </MaxWidthWrapper>
+
+      
     </section>
 
     <section className="bg-primary">

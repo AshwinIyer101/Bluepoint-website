@@ -3,7 +3,7 @@ import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "./ui/resiz
 import Link from "next/link"
 import { buttonVariants } from "./ui/button"
 import { ArrowBigRight, ArrowRight, Ghost } from "lucide-react"
-
+//TODO: CHANGE BLURBS TO LOOK BETTER ON MOBILE AND SMALL SCREENS
 
 const ProductsBlurb = () => {
     return (
@@ -12,9 +12,9 @@ const ProductsBlurb = () => {
       className="w-full rounded-lg"
     >
       
-      <ResizablePanel >
-        <ResizablePanelGroup direction="vertical">
-          <ResizablePanel defaultSize={45}>
+      <ResizablePanel defaultSize={50}>
+        <ResizablePanelGroup direction="vertical" className="h-full">
+          <ResizablePanel defaultSize={15}>
             <div className="flex h-full items-center justify-center p-6 border-b">
               <span className="font-semibold lg:text-2xl md:text-xl sm:text-lg">
                 Products fit to function
@@ -22,7 +22,7 @@ const ProductsBlurb = () => {
             </div>
           </ResizablePanel>
           <ResizableHandle />
-          <ResizablePanel defaultSize={255} >
+          <ResizablePanel defaultSize={85} >
             <div className="flex flex-col justify-evenly items-center h-full p-6 ">
               <span className=" font-normal text-center lg:text-xl md:text-lg sm:text-base">
               We leverage our experience with companies to create products addressing real 
@@ -31,15 +31,15 @@ const ProductsBlurb = () => {
               with your documents, regardless of database size, 
               operating entirely on-device to ensure your data&apos;s privacy.              
               </span>
-              <Link className={['justify-end','lg:text-lg', 'md:text-base', 'sm:text-sm', 'text-primary',  buttonVariants({variant: 'ghost', size: 'lg'})].join(' ')} href='/contact_us' >
+              <Link className={['justify-end','lg:text-lg', 'md:text-base', 'sm:text-sm', 'text-primary',  buttonVariants({variant: 'ghost', size: 'lg'})].join(' ')} href='/dot' >
                 Try Dot now <ArrowRight />
               </Link>
             </div>
           </ResizablePanel>
         </ResizablePanelGroup>
       </ResizablePanel>
-     
-      <ResizablePanel >
+
+      <ResizablePanel defaultSize={50}>
         <div className="flex h-full items-center justify-center p-6 py-32">
           <Image src="/Dot_logo.png" alt="Dot logo" width={300} height={300}/>
         </div>

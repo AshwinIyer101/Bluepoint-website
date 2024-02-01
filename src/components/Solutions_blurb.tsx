@@ -3,7 +3,7 @@ import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "./ui/resiz
 import Link from "next/link"
 import { buttonVariants } from "./ui/button"
 import { ArrowBigRight, ArrowRight, Ghost } from "lucide-react"
-
+//TODO: CHANGE BLURBS TO LOOK BETTER ON MOBILE AND SMALL SCREENS
 
 const HomeBlurb = () => {
     return (
@@ -35,8 +35,8 @@ const HomeBlurb = () => {
                 knowledge management LLMs for universities, we help companies find and implement these 
                 solutions to enhance the things they care about.
               </span>
-              <Link className={['justify-end','lg:text-lg', 'md:text-base', 'sm:text-sm', 'text-primary',  buttonVariants({variant: 'ghost', size: 'lg'})].join(' ')} href='/contact_us' >
-                Book a consultation <ArrowRight />
+              <Link className={['justify-end','lg:text-lg', 'md:text-base', 'sm:text-sm', 'text-primary',  buttonVariants({variant: 'ghost', size: 'lg'})].join(' ')} href='/services' >
+                See what we do <ArrowRight />
               </Link>
             </div>
           </ResizablePanel>

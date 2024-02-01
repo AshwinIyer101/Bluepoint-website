@@ -5,6 +5,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowDownToLine, CircleDollarSign, LibrarySquare, LineChart } from "lucide-react";
 import HomeBlurb from "@/components/Solutions_blurb"; 
 import ProductsBlurb from "@/components/Products_blurb";
+import Action_call from "@/components/Call_to_action";
 
 const perks = [
   {
@@ -84,10 +85,16 @@ export default function Home() {
     <MaxWidthWrapper className="py-20">
     <HomeBlurb /> 
     </MaxWidthWrapper>
-
+    
     <MaxWidthWrapper className="py-20">
     <ProductsBlurb /> 
     </MaxWidthWrapper>
+    </section>
+
+    <section className="bg-primary">
+      <MaxWidthWrapper className="py-20">
+      <Action_call />
+      </MaxWidthWrapper>
     </section>
     </>
   );

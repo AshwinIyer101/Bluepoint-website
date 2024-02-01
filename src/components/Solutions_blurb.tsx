@@ -12,13 +12,13 @@ const HomeBlurb = () => {
       className=" w-full rounded-lg "
 
     >
-      <ResizablePanel >
+      <ResizablePanel defaultSize={50}>
         <div className="flex h-full items-center justify-center p-6">
           <Image src="/Colored_neural_network.svg.png" alt="neural network diagram" width={300} height={1}/>
         </div>
       </ResizablePanel>
       <ResizableHandle />
-      <ResizablePanel >
+      <ResizablePanel defaultSize={50}>
         <ResizablePanelGroup direction="vertical">
           <ResizablePanel defaultSize={15}>
             <div className="flex h-full items-center justify-center p-6 border-b">

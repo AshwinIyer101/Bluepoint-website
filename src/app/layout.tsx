@@ -10,8 +10,8 @@ import Footer from '@/components/footer';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Raw material marketplace',
-  description: 'A place to buy raw materials with no hassle',
+  title: 'Bluepoint Solutions',
+  description: 'AI solutions for businesses and consumers',
 }
 
 export default function RootLayout({

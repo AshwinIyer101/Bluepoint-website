@@ -3,9 +3,9 @@ import MaxWidthWrapper from "./MaxWidthWrapper"
 
 const Footer = ({}) => {
 return (
-   <footer className=" h-32 border-t border-gray-200">
+   <footer className="flex flex-col h-32 border-t border-gray-200 justify-center">
     <MaxWidthWrapper className="flex justify-center">
-    <p className="pt-5"> beep boop this is sample text footer</p>
+    <p className="mb-3 text-muted-foreground">Bluepoint Solutions 2023™</p>
     </MaxWidthWrapper>
    </footer>
 )

@@ -46,12 +46,14 @@ export default function Home() {
     Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor
     </p>
     <div className="flex flex-col sm:flex-row gap-4 mt-6">
-      <Link href="/products" className={buttonVariants()}>
-        Lorem Ipsum Dolor
+      <Link href="/contact-us" className={buttonVariants()}>
+        Contact us
       </Link>
-      <Button variant="ghost">
-      Lorem Ipsum Dolor &rarr;
-      </Button>
+      <Link href="/services" className={buttonVariants({
+                                                    variant: 'ghost',
+                                                })}>
+        What we do
+      </Link>
     </div>
     </div>
 

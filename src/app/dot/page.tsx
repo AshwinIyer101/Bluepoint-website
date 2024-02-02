@@ -1,10 +1,14 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import DotVideo from "@/components/dot-video";
+
 
 export default function Home() {
+    
+
     return (
         <>
         <MaxWidthWrapper>
-            <p>sdgfvhuj</p>
+            <DotVideo />
         </MaxWidthWrapper>
         
         </>

@@ -30,7 +30,7 @@ const Navbar = (props: any) => {
                             
                             <div className="ml-auto flex  items-center">
                                 <div className=' lg:hidden'>
-                                    {/* TODO: MAKE THE MOBILE NAVBAR SHUT AFTER A LINK IS CLICKED */}
+                                    {/* TODO: MAKE it faster */}
                                     <Sheet >
                                       <SheetTrigger className='mr-4'>
                                         <Menu />
@@ -41,7 +41,6 @@ const Navbar = (props: any) => {
                                         </SheetTitle>
                                         <div className='flex flex-col '>
                                         <div className='flex flex-col items-center'>
-                                            
                                         <div className="ml-4 flow-root py-4 lg:ml-6 text-primary">
                                        
                                     <Link
